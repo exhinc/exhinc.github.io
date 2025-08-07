@@ -1,1863 +1,578 @@
-
-</style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">Exhinc</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#who-we-help">Who We Help</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#service-areas">Areas We Serve</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="#contact" class="cta-button">Get Free Offer</a>
-        </nav>
-    </header>
-
-    <!-- Sticky CTA -->
-    <div class="sticky-cta">
-        <a href="#contact" class="sticky-cta-button">💰 Get Cash Offer Now</a>
-    </div>
-
-    <!-- Chat Widget -->
-    <div class="chat-widget">
-        <div class="chat-button" onclick="toggleChat()">💬</div>
-        <div class="chat-popup" id="chatPopup">
-            <div class="chat-header">
-                <h4>How Can We Help?</h4>
-            </div>
-            <div class="chat-content">
-                <p>Get instant answers to your questions:</p>
-                <div class="chat-options">
-                    <div class="chat-option" onclick="selectChatOption('offer')">Get My Cash Offer</div>
-                    <div class="chat-option" onclick="selectChatOption('process')">How Does It Work?</div>
-                    <div class="chat-option" onclick="selectChatOption('timeline')">How Fast Can You Close?</div>
-                    <div class="chat-option" onclick="selectChatOption('call')">Speak With Someone</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="urgency-banner">⏰ Limited Time: Get Your Offer In 24 Hours!</div>
-            <h1>Sell Your Home Fast & Easy</h1>
-            <p>Colorado's most trusted home buyer since 2001. No fees, no repairs, no hassles. Get your guaranteed cash offer in 24 hours!</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Get My Cash Offer</a>
-                <a href="tel:‪(484) 630-1899‬" class="btn-secondary">Call (303) 625-9191</a>
-            </div>
-            <div class="guarantee-badge">
-                🛡️ 100% No Obligation Guarantee - Licensed & Insured
-            </div>
-        </div>
-    </section>
-
-    <!-- Media Mentions -->
-    <section class="media-mentions">
-        <div class="container">
-            <p>As Seen On:</p>
-            <div class="media-logos">
-                <div class="media-logo">Channel 7 News</div>
-                <div class="media-logo">CBS </div>
-                <div class="media-logo"> Post</div>
-                <div class="media-logo">9News</div>
-                <div class="media-logo">FOX31</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <h2 class="section-title">Our Simple 4-Step Process</h2>
-            <div class="process-timeline">
-                <div class="process-card fade-in">
-                    <div class="process-number">1</div>
-                    <h3>Submit Your Info</h3>
-                    <p>Tell us about your property with our simple form or give us a quick call. No obligations.</p>
-                    <div class="time-indicator">5 Minutes</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">2</div>
-                    <h3>Property Evaluation</h3>
-                    <p>We'll assess your home and provide you with a fair price range within hours.</p>
-                    <div class="time-indicator">Same Day</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">3</div>
-                    <h3>Get Your Offer</h3>
-                    <p>Receive your no-obligation cash offer within 24 hours. No surprises, no hidden fees.</p>
-                    <div class="time-indicator">24 Hours</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">4</div>
-                    <h3>Close & Get Paid</h3>
-                    <p>Choose your closing date and get your cash. We handle all the paperwork and details.</p>
-                    <div class="time-indicator">7-30 Days</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who We Help Section -->
-    <section class="who-we-help" id="who-we-help">
-        <div class="container">
-            <h2 class="section-title">We Help Homeowners in Any Situation</h2>
-            <div class="situations-grid">
-                <div class="situation-category fade-in">
-                    <h3>Life Changes</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Inherited Home</div>
-                        <div class="situation-item">Divorce</div>
-                        <div class="situation-item">Job Loss</div>
-                        <div class="situation-item">Bankruptcy</div>
-                        <div class="situation-item">Relocation</div>
-                        <div class="situation-item">Retirement</div>
-                        <div class="situation-item">Health Issues</div>
-                        <div class="situation-item">Downsizing</div>
-                    </div>
-                </div>
-                <div class="situation-category fade-in">
-                    <h3>Property Conditions</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Fire Damaged</div>
-                        <div class="situation-item">Storm Damaged</div>
-                        <div class="situation-item">Termite Damaged</div>
-                        <div class="situation-item">Home Repairs Needed</div>
-                        <div class="situation-item">Full of Trash or Stuff</div>
-                        <div class="situation-item">Hoarder Homes</div>
-                        <div class="situation-item">Problem Tenants</div>
-                        <div class="situation-item">Unfinished Construction</div>
-                    </div>
-                </div>
-                <div class="situation-category fade-in">
-                    <h3>Financial Challenges</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Foreclosure</div>
-                        <div class="situation-item">Past Due Mortgages</div>
-                        <div class="situation-item">No Equity</div>
-                        <div class="situation-item">Code Violations</div>
-                        <div class="situation-item">Title Issues</div>
-                        <div class="situation-item">Expensive Repairs</div>
-                        <div class="situation-item">Bad Tenants</div>
-                        <div class="situation-item">Family Issues</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <h2 class="section-title">Why Choose Exhinc?</h2>
-            <div class="benefits-grid">
-                <div class="benefits-content">
-                    <h2>The Smart Way to Sell</h2>
-                    <div class="benefits-list">
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Zero Fees</strong> - No realtor commissions or hidden costs
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Sell As-Is</strong> - No repairs, cleanup, or staging required
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Fast Closing</strong> - Close in as little as 7 days
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Guaranteed Offer</strong> - Fair, competitive cash offers
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Local Experts</strong> - 24+ years serving Colorado
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comparison-table">
-                    <div class="comparison-header">
-                        <div>Exhinc</div>
-                        <div>Traditional Sale</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Zero Fees</div>
-                        <div>✗ 6% + Fees</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Sell As-Is</div>
-                        <div>✗ Repairs Required</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Close in 7 Days</div>
-                        <div>✗ 60-90+ Days</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Guaranteed Sale</div>
-                        <div>✗ May Not Sell</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ No Showings</div>
-                        <div>✗ Constant Showings</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Areas Section -->
-    <section class="service-areas" id="service-areas">
-        <div class="container">
-            <h2 class="section-title">We Buy Houses Throughout Colorado</h2>
-            <p class="section-subtitle">Local cash buyers serving  and surrounding areas</p>
-            <div class="areas-grid">
-                <div class="area-card fade-in">
-                    <h3> Metro</h3>
-                    <ul>
-                        <li></li>
-                        <li>Aurora</li>
-                        <li>Lakewood</li>
-                        <li>Westminster</li>
-                        <li>Arvada</li>
-                        <li>Thornton</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>North Colorado</h3>
-                    <ul>
-                        <li>Fort Collins</li>
-                        <li>Longmont</li>
-                        <li>Brighton</li>
-                        <li>Northglenn</li>
-                        <li>Broomfield</li>
-                        <li>Commerce City</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>South Colorado</h3>
-                    <ul>
-                        <li>Colorado Springs</li>
-                        <li>Fountain</li>
-                        <li>Monument</li>
-                        <li>Castle Rock</li>
-                        <li>Littleton</li>
-                        <li>Centennial</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>West Areas</h3>
-                    <ul>
-                        <li>Golden</li>
-                        <li>Wheat Ridge</li>
-                        <li>Englewood</li>
-                        <li>Applewood</li>
-                        <li>Black Hawk</li>
-                        <li>Parker</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="areas-cta">
-                <p>Don't see your area listed? We buy houses throughout Colorado!</p>
-                <a href="tel:‪(484) 630-1899‬" class="cta-button">Call Us Today</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-us">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Colorado's Most Trusted Home Buyer</h2>
-                    <p>Exhinc has been recognized as one of the leading home buyers in Colorado, having successfully purchased and sold hundreds of homes in  and its neighboring areas since 2001.</p>
-                    <p>As a local , Colorado house-buying company, we come to you quickly and want to buy your house fast and right now. Our fast, simple, pain-free process is streamlined to give you the money you need as efficiently as possible.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number">24+</div>
-                            <div class="stat-label">Years in Business</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Homes Purchased</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">24hr</div>
-                            <div class="stat-label">Response Time</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="trust-badges">
-                    <div class="badge">BBB A+ Rated</div>
-                    <div class="badge">Local & Family Owned</div>
-                    <div class="badge">Licensed & Insured</div>
-                    <div class="badge">As Seen On TV</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <h2 class="section-title">Meet Our Expert Team</h2>
-            <div class="team-grid">
-                <div class="team-member fade-in">
-                    <div class="team-photo">R</div>
-                    <div class="team-name">Rick Medina</div>
-                    <div class="team-role">Senior Property Specialist</div>
-                    <div class="team-description">Over 15 years helping homeowners with quick, fair sales. Known for his honesty and straightforward approach.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">B</div>
-                    <div class="team-name">Brian Thompson</div>
-                    <div class="team-role">Property Evaluator</div>
-                    <div class="team-description">Expert at property assessment and helping families through difficult transitions with compassion.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">T</div>
-                    <div class="team-name">Troy Williams</div>
-                    <div class="team-role">Client Relations Manager</div>
-                    <div class="team-description">Dedicated to making the selling process smooth and stress-free for every homeowner.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">E</div>
-                    <div class="team-name">Emma Rodriguez</div>
-                    <div class="team-role">Customer Service Lead</div>
-                    <div class="team-description">First point of contact who ensures every client feels heard and supported throughout their journey.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before/After Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2 class="section-title">Properties We've Transformed</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            🔥
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            🏠
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Fire Damaged Home - Aurora</h4>
-                        <p>Bought as-is and completely renovated for a new family</p>
-                    </div>
-                </div>
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            🗑️
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            ✨
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Hoarder Home - </h4>
-                        <p>Full cleanup and renovation, now a beautiful family home</p>
-                    </div>
-                </div>
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            ⚡
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            🏡
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Storm Damage - Lakewood</h4>
-                        <p>Complete restoration after severe weather damage</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        How do you determine the offer price?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        We consider your home's condition, location, comparable sales, and current market conditions. Our offers are based on<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exhinc - Colorado's Trusted Home Buyer Since 2001</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Why Choose Us - Exhinc</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #1a1a1a;
-            overflow-x: hidden;
+            color: #333;
         }
-
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
         /* Header */
-        .header {
+        header {
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             position: fixed;
-            top: 0;
             width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            top: 0;
             z-index: 1000;
-            transition: all 0.3s ease;
         }
-
-        .nav {
+        
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 1rem 0;
         }
-
+        
         .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2c3e50;
         }
-
+        
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 1.5rem;
+            gap: 2rem;
         }
-
+        
         .nav-links a {
             text-decoration: none;
             color: #333;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
-
-        .nav-links a:hover {
-            color: #667eea;
+        
+        .nav-links a:hover, .nav-links a.active {
+            color: #e74c3c;
         }
-
-        .mobile-menu-btn {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        .mobile-menu-btn span {
-            width: 25px;
-            height: 3px;
-            background: #333;
-            margin: 3px 0;
-            transition: 0.3s;
-        }
-
+        
         .cta-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #e74c3c;
             color: white;
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            padding: 12px 24px;
             text-decoration: none;
-            display: inline-block;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
         }
-
+        
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            background: #c0392b;
         }
-
-        /* Sticky CTA */
-        .sticky-cta {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-            animation: pulse 2s infinite;
-        }
-
-        .sticky-cta-button {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-            color: white;
-            padding: 1rem 1.5rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 700;
-            cursor: pointer;
-            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .sticky-cta-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
+        
         /* Hero Section */
         .hero {
-            min-height: 100vh;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            text-align: center;
             color: white;
-            position: relative;
-            z-index: 2;
+            padding: 150px 0 100px;
+            text-align: center;
+            margin-top: 80px;
         }
-
-        .urgency-banner {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            margin-bottom: 2rem;
-            display: inline-block;
-            font-weight: 600;
-            animation: slideDown 1s ease 0.3s forwards;
-            opacity: 0;
-        }
-
+        
         .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            opacity: 0;
-            animation: slideUp 1s ease 0.5s forwards;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
         }
-
+        
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
-            max-width: 600px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
-            opacity: 0;
-            animation: slideUp 1s ease 0.7s forwards;
         }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            opacity: 0;
-            animation: slideUp 1s ease 0.9s forwards;
+        
+        /* Key Differences */
+        .key-differences {
+            padding: 100px 0;
         }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .btn-primary {
-            background: white;
-            color: #667eea;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            padding: 1rem 2rem;
-            border: 2px solid white;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: #667eea;
-        }
-
-        .guarantee-badge {
-            margin-top: 2rem;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1rem 2rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            display: inline-block;
-        }
-
-        /* Media Mentions */
-        .media-mentions {
-            background: white;
-            padding: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .media-mentions p {
-            font-weight: 600;
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .media-logos {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .media-logo {
-            padding: 0.5rem 1rem;
-            background: #f8fafc;
-            border-radius: 8px;
-            font-weight: 600;
-            color: #4a5568;
-        }
-
-        /* Process Section */
-        .process {
-            padding: 6rem 2rem;
-            background: #f8fafc;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        
         .section-title {
             text-align: center;
             font-size: 2.5rem;
-            font-weight: 700;
             margin-bottom: 3rem;
-            color: #1a1a1a;
+            color: #2c3e50;
         }
-
-        .process-timeline {
+        
+        .differences-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-            position: relative;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
         }
-
-        .process-timeline::before {
-            content: '';
-            position: absolute;
-            top: 30px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            z-index: 1;
-        }
-
-        .process-card {
+        
+        .difference-card {
             background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 2;
-        }
-
-        .process-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .process-number {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 1rem;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-        }
-
-        .process-card h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
-        }
-
-        .process-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .time-indicator {
-            background: #10b981;
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-top: 1rem;
-            display: inline-block;
-        }
-
-        /* Who We Help Section */
-        .who-we-help {
-            padding: 6rem 2rem;
-            background: white;
-        }
-
-        .situations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .situation-category {
-            background: #f8fafc;
-            padding: 2rem;
-            border-radius: 20px;
-            border-top: 4px solid #667eea;
-            transition: all 0.3s ease;
-        }
-
-        .situation-category:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .situation-category h3 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
-            text-align: center;
-        }
-
-        .situation-list {
-            display: grid;
-            gap: 0.5rem;
-        }
-
-        .situation-item {
-            background: white;
-            padding: 0.8rem 1rem;
-            border-radius: 8px;
-            border-left: 3px solid #667eea;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .situation-item:hover {
-            background: #667eea;
-            color: white;
-            transform: translateX(5px);
-        }
-
-        /* Benefits Section */
-        .benefits {
-            padding: 6rem 2rem;
-            background: #f8fafc;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-            margin-top: 3rem;
-        }
-
-        .benefits-content h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
-        }
-
-        .benefits-list {
-            display: grid;
-            gap: 1rem;
-        }
-
-        .benefit-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: white;
-            border-radius: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .benefit-item:hover {
-            background: #e2e8f0;
-            transform: translateX(10px);
-        }
-
-        .benefit-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 600;
-        }
-
-        .comparison-table {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-        }
-
-        .comparison-header {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .comparison-header div {
-            padding: 1.5rem;
-        }
-
-        .comparison-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        .comparison-row:last-child {
-            border-bottom: none;
-        }
-
-        .comparison-row div {
-            padding: 1rem 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .comparison-row div:first-child {
-            background: #f0fff4;
-            color: #059669;
-        }
-
-        .comparison-row div:last-child {
-            background: #fef2f2;
-            color: #dc2626;
-        }
-
-        /* Service Areas */
-        .service-areas {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #666;
-            margin-bottom: 2rem;
-        }
-
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .area-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .area-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .area-card h3 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #667eea;
-        }
-
-        .area-card ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .area-card li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #e2e8f0;
-            color: #4a5568;
-        }
-
-        .area-card li:last-child {
-            border-bottom: none;
-        }
-
-        .areas-cta {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 2rem;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .areas-cta p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: #4a5568;
-        }
-
-        /* About Section */
-        .about-us {
-            padding: 6rem 2rem;
-            background: white;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-content h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #1a1a1a;
-        }
-
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.7;
-            color: #4a5568;
-            margin-bottom: 1.5rem;
-        }
-
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .stat {
-            text-align: center;
-            padding: 1.5rem;
-            background: #f8fafc;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-        }
-
-        .stat:hover {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            transform: translateY(-5px);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-        }
-
-        .trust-badges {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .badge {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.5rem 1rem;
+            padding: 3rem 2rem;
             border-radius: 15px;
             text-align: center;
-            font-weight: 600;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-top: 5px solid #e74c3c;
+            transition: transform 0.3s;
         }
-
-        .badge:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
-        }
-
-        /* Team Section */
-        .team {
-            padding: 6rem 2rem;
-            background: #f8fafc;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .team-member {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .team-member:hover {
+        
+        .difference-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
-
-        .team-photo {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            color: white;
-            font-size: 2rem;
-            font-weight: 700;
-        }
-
-        .team-name {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #1a1a1a;
-        }
-
-        .team-role {
-            color: #667eea;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .team-description {
-            color: #666;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        /* Before/After Gallery */
-        .gallery {
-            padding: 6rem 2rem;
-            background: white;
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .gallery-item {
-            background: #f8fafc;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .gallery-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .gallery-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            height: 200px;
-        }
-
-        .gallery-before, .gallery-after {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-            font-weight: 700;
-            position: relative;
-        }
-
-        .gallery-before {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-        }
-
-        .gallery-after {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-        }
-
-        .gallery-label {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.7);
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-        }
-
-        .gallery-info {
-            padding: 1.5rem;
-            text-align: center;
-        }
-
-        .gallery-info h4 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: #1a1a1a;
-        }
-
-        .gallery-info p {
-            color: #666;
-            font-size: 0.9rem;
-        }
-
-        /* FAQ Section */
-        .faq {
-            padding: 6rem 2rem;
-            background: #f8fafc;
-        }
-
-        .faq-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .faq-item {
-            background: white;
-            border-radius: 15px;
-            margin-bottom: 1rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        .faq-question {
-            padding: 1.5rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: white;
-            border: none;
-            width: 100%;
-            text-align: left;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            transition: all 0.3s ease;
-        }
-
-        .faq-question:hover {
-            background: #f8fafc;
-        }
-
-        .faq-icon {
-            background: #667eea;
-            color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .faq-answer {
-            padding: 0 1.5rem 1.5rem;
-            color: #666;
-            line-height: 1.6;
-            display: none;
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        .faq-item.active .faq-icon {
-            transform: rotate(45deg);
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 6rem 2rem;
-            background: white;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .testimonial-card {
-            background: #f8fafc;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: -10px;
-            left: 20px;
+        
+        .difference-icon {
             font-size: 4rem;
-            color: #667eea;
-            font-family: serif;
-        }
-
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-        }
-
-        .testimonial-text {
-            font-style: italic;
             margin-bottom: 1.5rem;
-            color: #4a5568;
-            line-height: 1.6;
         }
-
-        .testimonial-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .testimonial-author {
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-
-        .testimonial-rating {
-            color: #fbbf24;
-            font-size: 1.2rem;
-        }
-
-        .testimonial-date {
-            color: #667eea;
-            font-size: 0.9rem;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d3748 100%);
-            color: white;
-        }
-
-        .form-container {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .form-container h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
+        
+        .difference-card h3 {
+            font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: #2c3e50;
         }
-
-        .form-container p {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-
-        .contact-form-grid {
-            display: grid;
-            gap: 1.5rem;
-            text-align: left;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            color: #cbd5e0;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            padding: 1rem;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #667eea;
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .form-submit {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1.2rem 3rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 700;
+        
+        .difference-card p {
             font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-        }
-
-        .form-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
-        }
-
-        .privacy-note {
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.7);
-            margin-top: 1rem;
-        }
-
-        /* Chat Widget */
-        .chat-widget {
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            z-index: 998;
-        }
-
-        .chat-button {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
-            transition: all 0.3s ease;
-            animation: bounce 2s infinite;
-        }
-
-        .chat-button:hover {
-            transform: scale(1.1);
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-
-        .chat-popup {
-            position: absolute;
-            bottom: 70px;
-            right: 0;
-            width: 300px;
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-            display: none;
-            animation: slideUp 0.3s ease;
-        }
-
-        .chat-popup.active {
-            display: block;
-        }
-
-        .chat-header {
-            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-            color: white;
-            padding: 1rem;
-            border-radius: 15px 15px 0 0;
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .chat-content {
-            padding: 1.5rem;
-        }
-
-        .chat-content p {
-            margin-bottom: 1rem;
-            color: #4a5568;
-        }
-
-        .chat-options {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-        }
-
-        .chat-option {
-            background: #f8fafc;
-            border: 2px solid #e2e8f0;
-            padding: 0.8rem;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: left;
-        }
-
-        .chat-option:hover {
-            background: #667eea;
-            color: white;
-            border-color: #667eea;
-        }
-
-        /* Exit Intent Popup */
-        .exit-popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-
-        .exit-popup.show {
-            display: flex;
-        }
-
-        .exit-popup-content {
-            background: white;
-            padding: 3rem;
-            border-radius: 20px;
-            max-width: 500px;
-            text-align: center;
-            position: relative;
-            animation: popIn 0.3s ease;
-        }
-
-        @keyframes popIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .exit-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
+            line-height: 1.8;
             color: #666;
         }
-
-        .exit-popup h3 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #1a1a1a;
+        
+        /* Trust Indicators */
+        .trust-indicators {
+            padding: 100px 0;
+            background: #f8f9fa;
         }
-
-        .exit-popup p {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 2rem;
-        }
-
-        .exit-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-
-        /* Footer */
-        .footer {
-            background: #1a1a1a;
-            color: white;
-            padding: 3rem 2rem 1rem;
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        
+        .trust-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h4 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-section li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section a {
-            color: #cbd5e0;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: white;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid #2d3748;
-            padding-top: 2rem;
             text-align: center;
-            color: #cbd5e0;
         }
-
-        .license-info {
-            display: flex;
-            justify-content: center;
+        
+        .trust-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .trust-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e74c3c;
+            display: block;
+        }
+        
+        .trust-label {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        /* Guarantees Section */
+        .guarantees {
+            padding: 100px 0;
+        }
+        
+        .guarantees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 1rem;
-            flex-wrap: wrap;
         }
-
-        .license-badge {
-            background: #2d3748;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-        }
-
-        /* Home Value Calculator */
-        .calculator {
+        
+        .guarantee-card {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 3rem 2rem;
+            border-radius: 15px;
             text-align: center;
-            margin-top: 3rem;
-            border-radius: 20px;
         }
-
-        .calculator h3 {
-            font-size: 1.8rem;
-            font-weight: 700;
+        
+        .guarantee-card h4 {
+            font-size: 1.3rem;
             margin-bottom: 1rem;
         }
-
-        .calculator p {
-            margin-bottom: 2rem;
+        
+        .guarantee-card p {
             opacity: 0.9;
         }
-
-        .calculator-form {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 400px;
-            margin: 0 auto;
+        
+        /* Comparison Table */
+        .detailed-comparison {
+            padding: 100px 0;
+            background: #f8f9fa;
         }
-
-        .calculator-input {
-            flex: 1;
-            min-width: 200px;
-            padding: 1rem;
-            border: none;
-            border-radius: 50px;
-            font-size: 1rem;
-        }
-
-        .calculator-btn {
+        
+        .comparison-table {
             background: white;
-            color: #667eea;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 50px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 auto;
+            max-width: 1000px;
         }
-
-        .calculator-btn:hover {
+        
+        .comparison-header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-cell {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .comparison-category {
+            text-align: left;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .exhinc-column {
+            background: #e8f5e8;
+            font-weight: bold;
+        }
+        
+        .checkmark {
+            color: #27ae60;
+            font-size: 1.5rem;
+        }
+        
+        .x-mark {
+            color: #e74c3c;
+            font-size: 1.5rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn-primary {
+            background: #e74c3c;
+            color: white;
+            padding: 18px 36px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #c0392b;
             transform: translateY(-2px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
-
-        /* Responsive Design */
+        
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            color: #ecf0f1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a:hover {
+            color: #e74c3c;
+        }
+        
+        /* Mobile Responsiveness */
         @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: flex;
-            }
-
             .nav-links {
                 display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: white;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                flex-direction: column;
-                padding: 2rem;
-                gap: 1rem;
             }
-
-            .nav-links.active {
-                display: flex;
+            
+            .hero h1 {
+                font-size: 2.2rem;
             }
-
-            .benefits-grid,
-            .about-grid {
+            
+            .differences-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
             }
-
-            .comparison-header,
+            
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .guarantees-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .comparison-row {
                 grid-template-columns: 1fr;
+                text-align: left;
             }
-
-            .hero-buttons {
-                flex-direction: column;
-                align-items: center;
+            
+            .comparison-header {
+                display: none;
             }
-
-            .form-row {
-                grid-template-columns: 1fr;
-            }
-
-            .stats,
-            .trust-badges {
-                grid-template-columns: 1fr;
-            }
-
-            .chat-popup {
-                width: 280px;
-            }
-
-            .sticky-cta {
-                bottom: 10px;
-                right: 10px;
-            }
-
-            .chat-widget {
-                bottom: 80px;
-                right: 10px;
+            
+            .comparison-cell:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: block;
+                margin-bottom: 0.5rem;
             }
         }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Exhinc</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="why-choose-us.html" class="active">Why Choose Us</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="contact.html" class="cta-button">Get My Offer</a>
+            </nav>
+        </div>
+    </header>
 
-        /* Loading Animation */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Why Choose Exhinc?</h1>
+            <p>We're not just another home buying company. We're your partners in making the biggest financial transaction of your life as smooth, fair, and stress-free as possible.</p>
+        </div>
+    </section>
 
-        .fade-in {
-            animation: fadeInUp 0.6s ease forwards;
-        }
+    <!-- Key Differences -->
+    <section class="key-differences">
+        <div class="container">
+            <h2 class="section-title">What Makes Us Different</h2>
+            <div class="differences-grid">
+                <div class="difference-card">
+                    <div class="difference-icon">🤝</div>
+                    <h3>Family-Owned Values</h3>
+                    <p>We're a family-owned business that treats every homeowner like family. No corporate bureaucracy, no pushy sales tactics – just honest, straightforward service from people who genuinely care about your situation.</p>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">⚡</div>
+                    <h3>Lightning-Fast Process</h3>
+                    <p>While others take weeks to make offers, we deliver yours in 24 hours. Need to close quickly? We can do it in 7 days. Need more time? Take up to 60 days. We move at your speed, not ours.</p>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">💎</div>
+                    <h3>Fair Market Offers</h3>
+                    <p>We pride ourselves on making the highest fair offers possible. No lowball tactics or surprise deductions. Our offers are based on real market data and transparent calculations.</p>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">🛡️</div>
+                    <h3>Zero Risk Guarantee</h3>
+                    <p>Your satisfaction is guaranteed. If anything doesn't feel right, you can walk away at any time before closing with no penalties, no fees, and no hard feelings.</p>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">🇺🇸</div>
+                    <h3>Nationwide Reach</h3>
+                    <p>From California to Maine, Florida to Washington – we buy homes in all 50 states. Wherever your property is located, we have local market expertise and can close quickly.</p>
+                </div>
+                <div class="difference-card">
+                    <div class="difference-icon">🔒</div>
+                    <h3>Guaranteed Closing</h3>
+                    <p>When you accept our offer, consider it sold. We close with our own cash – no waiting for financing approvals, no deals falling through at the last minute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <h2 class="section-title">Trusted by Thousands</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <span class="trust-number">15+</span>
+                    <div class="trust-label">Years in Business</div>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">50</span>
+                    <div class="trust-label">States Served</div>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">5,000+</span>
+                    <div class="trust-label">Homes Purchased</div>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">24hrs</span>
+                    <div class="trust-label">Average Offer Time</div>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">98%</span>
+                    <div class="trust-label">Customer Satisfaction</div>
+                </div>
+                <div class="trust-item">
+                    <span class="trust-number">$0</span>
+                    <div class="trust-label">Fees & Commissions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees -->
+    <section class="guarantees">
+        <div class="container">
+            <h2 class="section-title">Our Guarantees to You</h2>
+            <div class="guarantees-grid">
+                <div class="guarantee-card">
+                    <h4>24-Hour Offer Guarantee</h4>
+                    <p>We guarantee to provide your cash offer within 24 hours of receiving your property information, or we'll pay you $500 for your time.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h4>No Hidden Fees Promise</h4>
+                    <p>The offer we make is exactly what you'll receive. No surprise deductions, no hidden fees, no last-minute changes. What we promise, we deliver.</p>
+                </div>
+                <div class="guarantee-card">
+                    <h4>Satisfaction Guarantee</h4>
+                    <p>If you're not completely satisfied with our service or offer, you can walk away at any time with no obligation and no hard feelings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Comparison -->
+    <section class="detailed-comparison">
+        <div class="container">
+            <h2 class="section-title">Complete Comparison</h2>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <h3>See How We Stack Up Against Every Other Option</h3>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category"></div>
+                    <div class="comparison-cell"><strong>Exhinc</strong></div>
+                    <div class="comparison-cell"><strong>Real Estate Agent</strong></div>
+                    <div class="comparison-cell"><strong>Other Cash Buyers</strong></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Average Timeline">Average Timeline</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">7-30 Days</div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">3-6 Months</div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">30-60 Days</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Repairs Required">Repairs Required</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">None <span class="checkmark">✓</span></div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">Usually <span class="x-mark">✗</span></div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">Sometimes <span class="x-mark">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Agent Commissions">Agent Commissions</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">$0 <span class="checkmark">✓</span></div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">6-7% <span class="x-mark">✗</span></div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">$0 <span class="checkmark">✓</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Closing Costs">Closing Costs</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">We Pay <span class="checkmark">✓</span></div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">You Pay <span class="x-mark">✗</span></div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">You Pay <span class="x-mark">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Showings/Open Houses">Showings/Open Houses</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">None <span class="checkmark">✓</span></div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">Multiple <span class="x-mark">✗</span></div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">Some <span class="x-mark">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell comparison-category" data-label="Sale Guarantee">Sale Guarantee</div>
+                    <div class="comparison-cell exhinc-column" data-label="Exhinc">100% <span class="checkmark">✓</span></div>
+                    <div class="comparison-cell" data-label="Real Estate Agent">No Guarantee <span class="x-mark">✗</span></div>
+                    <div class="comparison-cell" data-label="Other Cash Buyers">Usually <span class="checkmark">✓</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience the Exhinc Difference</h2>
+            <p>See why thousands of homeowners choose us for their home sale. Get your no-obligation cash offer today and discover how easy selling your home can be.</p>
+            <a href="contact.html" class="btn-primary">Get My Cash Offer</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Exhinc</h3>
+                    <p>Real Estate Excellence Redefined</p>
+                    <p>Serving all 50 states with fast, fair cash offers for your home.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="why-choose-us.html">Why Choose Us</a>
+                    <a href="testimonials.html">Testimonials</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Get Started</h3>
+                    <a href="contact.html">Get My Offer</a>
