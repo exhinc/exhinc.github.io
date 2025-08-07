@@ -1,9 +1,433 @@
-<!DOCTYPE html>
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">ClearSale</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#who-we-help">Who We Help</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#service-areas">Areas We Serve</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#contact" class="cta-button">Get Free Offer</a>
+        </nav>
+    </header>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="#contact" class="sticky-cta-button">💰 Get Cash Offer Now</a>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">💬</div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <h4>How Can We Help?</h4>
+            </div>
+            <div class="chat-content">
+                <p>Get instant answers to your questions:</p>
+                <div class="chat-options">
+                    <div class="chat-option" onclick="selectChatOption('offer')">Get My Cash Offer</div>
+                    <div class="chat-option" onclick="selectChatOption('process')">How Does It Work?</div>
+                    <div class="chat-option" onclick="selectChatOption('timeline')">How Fast Can You Close?</div>
+                    <div class="chat-option" onclick="selectChatOption('call')">Speak With Someone</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="urgency-banner">⏰ Limited Time: Get Your Offer In 24 Hours!</div>
+            <h1>Sell Your Denver Home Fast & Easy</h1>
+            <p>Colorado's most trusted home buyer since 2001. No fees, no repairs, no hassles. Get your guaranteed cash offer in 24 hours!</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Get My Cash Offer</a>
+                <a href="tel:3036259191" class="btn-secondary">Call (303) 625-9191</a>
+            </div>
+            <div class="guarantee-badge">
+                🛡️ 100% No Obligation Guarantee - Licensed & Insured
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Mentions -->
+    <section class="media-mentions">
+        <div class="container">
+            <p>As Seen On:</p>
+            <div class="media-logos">
+                <div class="media-logo">Channel 7 News</div>
+                <div class="media-logo">CBS Denver</div>
+                <div class="media-logo">Denver Post</div>
+                <div class="media-logo">9News</div>
+                <div class="media-logo">FOX31</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Our Simple 4-Step Process</h2>
+            <div class="process-timeline">
+                <div class="process-card fade-in">
+                    <div class="process-number">1</div>
+                    <h3>Submit Your Info</h3>
+                    <p>Tell us about your property with our simple form or give us a quick call. No obligations.</p>
+                    <div class="time-indicator">5 Minutes</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">2</div>
+                    <h3>Property Evaluation</h3>
+                    <p>We'll assess your home and provide you with a fair price range within hours.</p>
+                    <div class="time-indicator">Same Day</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">3</div>
+                    <h3>Get Your Offer</h3>
+                    <p>Receive your no-obligation cash offer within 24 hours. No surprises, no hidden fees.</p>
+                    <div class="time-indicator">24 Hours</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">4</div>
+                    <h3>Close & Get Paid</h3>
+                    <p>Choose your closing date and get your cash. We handle all the paperwork and details.</p>
+                    <div class="time-indicator">7-30 Days</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help Section -->
+    <section class="who-we-help" id="who-we-help">
+        <div class="container">
+            <h2 class="section-title">We Help Homeowners in Any Situation</h2>
+            <div class="situations-grid">
+                <div class="situation-category fade-in">
+                    <h3>Life Changes</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Inherited Home</div>
+                        <div class="situation-item">Divorce</div>
+                        <div class="situation-item">Job Loss</div>
+                        <div class="situation-item">Bankruptcy</div>
+                        <div class="situation-item">Relocation</div>
+                        <div class="situation-item">Retirement</div>
+                        <div class="situation-item">Health Issues</div>
+                        <div class="situation-item">Downsizing</div>
+                    </div>
+                </div>
+                <div class="situation-category fade-in">
+                    <h3>Property Conditions</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Fire Damaged</div>
+                        <div class="situation-item">Storm Damaged</div>
+                        <div class="situation-item">Termite Damaged</div>
+                        <div class="situation-item">Home Repairs Needed</div>
+                        <div class="situation-item">Full of Trash or Stuff</div>
+                        <div class="situation-item">Hoarder Homes</div>
+                        <div class="situation-item">Problem Tenants</div>
+                        <div class="situation-item">Unfinished Construction</div>
+                    </div>
+                </div>
+                <div class="situation-category fade-in">
+                    <h3>Financial Challenges</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Foreclosure</div>
+                        <div class="situation-item">Past Due Mortgages</div>
+                        <div class="situation-item">No Equity</div>
+                        <div class="situation-item">Code Violations</div>
+                        <div class="situation-item">Title Issues</div>
+                        <div class="situation-item">Expensive Repairs</div>
+                        <div class="situation-item">Bad Tenants</div>
+                        <div class="situation-item">Family Issues</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose ClearSale?</h2>
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h2>The Smart Way to Sell</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Zero Fees</strong> - No realtor commissions or hidden costs
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Sell As-Is</strong> - No repairs, cleanup, or staging required
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Fast Closing</strong> - Close in as little as 7 days
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Guaranteed Offer</strong> - Fair, competitive cash offers
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Local Experts</strong> - 24+ years serving Colorado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-table">
+                    <div class="comparison-header">
+                        <div>ClearSale</div>
+                        <div>Traditional Sale</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Zero Fees</div>
+                        <div>✗ 6% + Fees</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Sell As-Is</div>
+                        <div>✗ Repairs Required</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Close in 7 Days</div>
+                        <div>✗ 60-90+ Days</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Guaranteed Sale</div>
+                        <div>✗ May Not Sell</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ No Showings</div>
+                        <div>✗ Constant Showings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas" id="service-areas">
+        <div class="container">
+            <h2 class="section-title">We Buy Houses Throughout Colorado</h2>
+            <p class="section-subtitle">Local cash buyers serving Denver and surrounding areas</p>
+            <div class="areas-grid">
+                <div class="area-card fade-in">
+                    <h3>Denver Metro</h3>
+                    <ul>
+                        <li>Denver</li>
+                        <li>Aurora</li>
+                        <li>Lakewood</li>
+                        <li>Westminster</li>
+                        <li>Arvada</li>
+                        <li>Thornton</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>North Colorado</h3>
+                    <ul>
+                        <li>Fort Collins</li>
+                        <li>Longmont</li>
+                        <li>Brighton</li>
+                        <li>Northglenn</li>
+                        <li>Broomfield</li>
+                        <li>Commerce City</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>South Colorado</h3>
+                    <ul>
+                        <li>Colorado Springs</li>
+                        <li>Fountain</li>
+                        <li>Monument</li>
+                        <li>Castle Rock</li>
+                        <li>Littleton</li>
+                        <li>Centennial</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>West Areas</h3>
+                    <ul>
+                        <li>Golden</li>
+                        <li>Wheat Ridge</li>
+                        <li>Englewood</li>
+                        <li>Applewood</li>
+                        <li>Black Hawk</li>
+                        <li>Parker</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areas-cta">
+                <p>Don't see your area listed? We buy houses throughout Colorado!</p>
+                <a href="tel:3036259191" class="cta-button">Call Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Colorado's Most Trusted Home Buyer</h2>
+                    <p>ClearSale has been recognized as one of the leading home buyers in Colorado, having successfully purchased and sold hundreds of homes in Denver and its neighboring areas since 2001.</p>
+                    <p>As a local Denver, Colorado house-buying company, we come to you quickly and want to buy your house fast and right now. Our fast, simple, pain-free process is streamlined to give you the money you need as efficiently as possible.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">24+</div>
+                            <div class="stat-label">Years in Business</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Homes Purchased</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24hr</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">BBB A+ Rated</div>
+                    <div class="badge">Local & Family Owned</div>
+                    <div class="badge">Licensed & Insured</div>
+                    <div class="badge">As Seen On TV</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-photo">R</div>
+                    <div class="team-name">Rick Medina</div>
+                    <div class="team-role">Senior Property Specialist</div>
+                    <div class="team-description">Over 15 years helping homeowners with quick, fair sales. Known for his honesty and straightforward approach.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">B</div>
+                    <div class="team-name">Brian Thompson</div>
+                    <div class="team-role">Property Evaluator</div>
+                    <div class="team-description">Expert at property assessment and helping families through difficult transitions with compassion.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">T</div>
+                    <div class="team-name">Troy Williams</div>
+                    <div class="team-role">Client Relations Manager</div>
+                    <div class="team-description">Dedicated to making the selling process smooth and stress-free for every homeowner.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">E</div>
+                    <div class="team-name">Emma Rodriguez</div>
+                    <div class="team-role">Customer Service Lead</div>
+                    <div class="team-description">First point of contact who ensures every client feels heard and supported throughout their journey.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Properties We've Transformed</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            🔥
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            🏠
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Fire Damaged Home - Aurora</h4>
+                        <p>Bought as-is and completely renovated for a new family</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            🗑️
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            ✨
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Hoarder Home - Denver</h4>
+                        <p>Full cleanup and renovation, now a beautiful family home</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            ⚡
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            🏡
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Storm Damage - Lakewood</h4>
+                        <p>Complete restoration after severe weather damage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How do you determine the offer price?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We consider your home's condition, location, comparable sales, and current market conditions. Our offers are based on<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClearSale - Colorado's Trusted Home Buyer Since 2001</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -191,7 +615,6 @@
         .hero p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            opacity: 0.9;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
@@ -1437,436 +1860,3 @@
         html {
             scroll-behavior: smooth;
         }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">ClearSale</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#process">Process</a></li>
-                <li><a href="#who-we-help">Who We Help</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#service-areas">Areas We Serve</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="#contact" class="cta-button">Get Free Offer</a>
-        </nav>
-    </header>
-
-    <!-- Sticky CTA -->
-    <div class="sticky-cta">
-        <a href="#contact" class="sticky-cta-button">💰 Get Cash Offer Now</a>
-    </div>
-
-    <!-- Chat Widget -->
-    <div class="chat-widget">
-        <div class="chat-button" onclick="toggleChat()">💬</div>
-        <div class="chat-popup" id="chatPopup">
-            <div class="chat-header">
-                <h4>How Can We Help?</h4>
-            </div>
-            <div class="chat-content">
-                <p>Get instant answers to your questions:</p>
-                <div class="chat-options">
-                    <div class="chat-option" onclick="selectChatOption('offer')">Get My Cash Offer</div>
-                    <div class="chat-option" onclick="selectChatOption('process')">How Does It Work?</div>
-                    <div class="chat-option" onclick="selectChatOption('timeline')">How Fast Can You Close?</div>
-                    <div class="chat-option" onclick="selectChatOption('call')">Speak With Someone</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="urgency-banner">⏰ Limited Time: Get Your Offer In 24 Hours!</div>
-            <h1>Sell Your Denver Home Fast & Easy</h1>
-            <p>Colorado's most trusted home buyer since 2001. No fees, no repairs, no hassles. Get your guaranteed cash offer in 24 hours!</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Get My Cash Offer</a>
-                <a href="tel:3036259191" class="btn-secondary">Call (303) 625-9191</a>
-            </div>
-            <div class="guarantee-badge">
-                🛡️ 100% No Obligation Guarantee - Licensed & Insured
-            </div>
-        </div>
-    </section>
-
-    <!-- Media Mentions -->
-    <section class="media-mentions">
-        <div class="container">
-            <p>As Seen On:</p>
-            <div class="media-logos">
-                <div class="media-logo">Channel 7 News</div>
-                <div class="media-logo">CBS Denver</div>
-                <div class="media-logo">Denver Post</div>
-                <div class="media-logo">9News</div>
-                <div class="media-logo">FOX31</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process" id="process">
-        <div class="container">
-            <h2 class="section-title">Our Simple 4-Step Process</h2>
-            <div class="process-timeline">
-                <div class="process-card fade-in">
-                    <div class="process-number">1</div>
-                    <h3>Submit Your Info</h3>
-                    <p>Tell us about your property with our simple form or give us a quick call. No obligations.</p>
-                    <div class="time-indicator">5 Minutes</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">2</div>
-                    <h3>Property Evaluation</h3>
-                    <p>We'll assess your home and provide you with a fair price range within hours.</p>
-                    <div class="time-indicator">Same Day</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">3</div>
-                    <h3>Get Your Offer</h3>
-                    <p>Receive your no-obligation cash offer within 24 hours. No surprises, no hidden fees.</p>
-                    <div class="time-indicator">24 Hours</div>
-                </div>
-                <div class="process-card fade-in">
-                    <div class="process-number">4</div>
-                    <h3>Close & Get Paid</h3>
-                    <p>Choose your closing date and get your cash. We handle all the paperwork and details.</p>
-                    <div class="time-indicator">7-30 Days</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Who We Help Section -->
-    <section class="who-we-help" id="who-we-help">
-        <div class="container">
-            <h2 class="section-title">We Help Homeowners in Any Situation</h2>
-            <div class="situations-grid">
-                <div class="situation-category fade-in">
-                    <h3>Life Changes</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Inherited Home</div>
-                        <div class="situation-item">Divorce</div>
-                        <div class="situation-item">Job Loss</div>
-                        <div class="situation-item">Bankruptcy</div>
-                        <div class="situation-item">Relocation</div>
-                        <div class="situation-item">Retirement</div>
-                        <div class="situation-item">Health Issues</div>
-                        <div class="situation-item">Downsizing</div>
-                    </div>
-                </div>
-                <div class="situation-category fade-in">
-                    <h3>Property Conditions</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Fire Damaged</div>
-                        <div class="situation-item">Storm Damaged</div>
-                        <div class="situation-item">Termite Damaged</div>
-                        <div class="situation-item">Home Repairs Needed</div>
-                        <div class="situation-item">Full of Trash or Stuff</div>
-                        <div class="situation-item">Hoarder Homes</div>
-                        <div class="situation-item">Problem Tenants</div>
-                        <div class="situation-item">Unfinished Construction</div>
-                    </div>
-                </div>
-                <div class="situation-category fade-in">
-                    <h3>Financial Challenges</h3>
-                    <div class="situation-list">
-                        <div class="situation-item">Foreclosure</div>
-                        <div class="situation-item">Past Due Mortgages</div>
-                        <div class="situation-item">No Equity</div>
-                        <div class="situation-item">Code Violations</div>
-                        <div class="situation-item">Title Issues</div>
-                        <div class="situation-item">Expensive Repairs</div>
-                        <div class="situation-item">Bad Tenants</div>
-                        <div class="situation-item">Family Issues</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <h2 class="section-title">Why Choose ClearSale?</h2>
-            <div class="benefits-grid">
-                <div class="benefits-content">
-                    <h2>The Smart Way to Sell</h2>
-                    <div class="benefits-list">
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Zero Fees</strong> - No realtor commissions or hidden costs
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Sell As-Is</strong> - No repairs, cleanup, or staging required
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Fast Closing</strong> - Close in as little as 7 days
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Guaranteed Offer</strong> - Fair, competitive cash offers
-                            </div>
-                        </div>
-                        <div class="benefit-item fade-in">
-                            <div class="benefit-icon">✓</div>
-                            <div>
-                                <strong>Local Experts</strong> - 24+ years serving Colorado
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="comparison-table">
-                    <div class="comparison-header">
-                        <div>ClearSale</div>
-                        <div>Traditional Sale</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Zero Fees</div>
-                        <div>✗ 6% + Fees</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Sell As-Is</div>
-                        <div>✗ Repairs Required</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Close in 7 Days</div>
-                        <div>✗ 60-90+ Days</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ Guaranteed Sale</div>
-                        <div>✗ May Not Sell</div>
-                    </div>
-                    <div class="comparison-row">
-                        <div>✓ No Showings</div>
-                        <div>✗ Constant Showings</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Areas Section -->
-    <section class="service-areas" id="service-areas">
-        <div class="container">
-            <h2 class="section-title">We Buy Houses Throughout Colorado</h2>
-            <p class="section-subtitle">Local cash buyers serving Denver and surrounding areas</p>
-            <div class="areas-grid">
-                <div class="area-card fade-in">
-                    <h3>Denver Metro</h3>
-                    <ul>
-                        <li>Denver</li>
-                        <li>Aurora</li>
-                        <li>Lakewood</li>
-                        <li>Westminster</li>
-                        <li>Arvada</li>
-                        <li>Thornton</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>North Colorado</h3>
-                    <ul>
-                        <li>Fort Collins</li>
-                        <li>Longmont</li>
-                        <li>Brighton</li>
-                        <li>Northglenn</li>
-                        <li>Broomfield</li>
-                        <li>Commerce City</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>South Colorado</h3>
-                    <ul>
-                        <li>Colorado Springs</li>
-                        <li>Fountain</li>
-                        <li>Monument</li>
-                        <li>Castle Rock</li>
-                        <li>Littleton</li>
-                        <li>Centennial</li>
-                    </ul>
-                </div>
-                <div class="area-card fade-in">
-                    <h3>West Areas</h3>
-                    <ul>
-                        <li>Golden</li>
-                        <li>Wheat Ridge</li>
-                        <li>Englewood</li>
-                        <li>Applewood</li>
-                        <li>Black Hawk</li>
-                        <li>Parker</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="areas-cta">
-                <p>Don't see your area listed? We buy houses throughout Colorado!</p>
-                <a href="tel:3036259191" class="cta-button">Call Us Today</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-us">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Colorado's Most Trusted Home Buyer</h2>
-                    <p>ClearSale has been recognized as one of the leading home buyers in Colorado, having successfully purchased and sold hundreds of homes in Denver and its neighboring areas since 2001.</p>
-                    <p>As a local Denver, Colorado house-buying company, we come to you quickly and want to buy your house fast and right now. Our fast, simple, pain-free process is streamlined to give you the money you need as efficiently as possible.</p>
-                    <div class="stats">
-                        <div class="stat">
-                            <div class="stat-number">24+</div>
-                            <div class="stat-label">Years in Business</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Homes Purchased</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">24hr</div>
-                            <div class="stat-label">Response Time</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="trust-badges">
-                    <div class="badge">BBB A+ Rated</div>
-                    <div class="badge">Local & Family Owned</div>
-                    <div class="badge">Licensed & Insured</div>
-                    <div class="badge">As Seen On TV</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-        <div class="container">
-            <h2 class="section-title">Meet Our Expert Team</h2>
-            <div class="team-grid">
-                <div class="team-member fade-in">
-                    <div class="team-photo">R</div>
-                    <div class="team-name">Rick Medina</div>
-                    <div class="team-role">Senior Property Specialist</div>
-                    <div class="team-description">Over 15 years helping homeowners with quick, fair sales. Known for his honesty and straightforward approach.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">B</div>
-                    <div class="team-name">Brian Thompson</div>
-                    <div class="team-role">Property Evaluator</div>
-                    <div class="team-description">Expert at property assessment and helping families through difficult transitions with compassion.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">T</div>
-                    <div class="team-name">Troy Williams</div>
-                    <div class="team-role">Client Relations Manager</div>
-                    <div class="team-description">Dedicated to making the selling process smooth and stress-free for every homeowner.</div>
-                </div>
-                <div class="team-member fade-in">
-                    <div class="team-photo">E</div>
-                    <div class="team-name">Emma Rodriguez</div>
-                    <div class="team-role">Customer Service Lead</div>
-                    <div class="team-description">First point of contact who ensures every client feels heard and supported throughout their journey.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before/After Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2 class="section-title">Properties We've Transformed</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            🔥
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            🏠
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Fire Damaged Home - Aurora</h4>
-                        <p>Bought as-is and completely renovated for a new family</p>
-                    </div>
-                </div>
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            🗑️
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            ✨
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Hoarder Home - Denver</h4>
-                        <p>Full cleanup and renovation, now a beautiful family home</p>
-                    </div>
-                </div>
-                <div class="gallery-item fade-in">
-                    <div class="gallery-images">
-                        <div class="gallery-before">
-                            ⚡
-                            <div class="gallery-label">Before</div>
-                        </div>
-                        <div class="gallery-after">
-                            🏡
-                            <div class="gallery-label">After</div>
-                        </div>
-                    </div>
-                    <div class="gallery-info">
-                        <h4>Storm Damage - Lakewood</h4>
-                        <p>Complete restoration after severe weather damage</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        How do you determine the offer price?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        We consider your home's condition, location, comparable sales, and current market conditions. Our offers are based on what we can sell the property for after any necessary repairs, minus our costs and a fair profit margin.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        Will you really buy my house in any condition?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        Yes! We buy houses in
