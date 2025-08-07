@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1030,3 +1029,844 @@
 
         .form-group input,
         .form-group select,
+        .form-group textarea {
+            padding: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .privacy-note {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1rem;
+        }
+
+        /* Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            z-index: 998;
+        }
+
+        .chat-button {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .chat-popup {
+            position: absolute;
+            bottom: 70px;
+            right: 0;
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            display: none;
+            animation: slideUp 0.3s ease;
+        }
+
+        .chat-popup.active {
+            display: block;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1rem;
+            border-radius: 15px 15px 0 0;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .chat-content {
+            padding: 1.5rem;
+        }
+
+        .chat-content p {
+            margin-bottom: 1rem;
+            color: #4a5568;
+        }
+
+        .chat-options {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .chat-option {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            padding: 0.8rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .chat-option:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        /* Exit Intent Popup */
+        .exit-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .exit-popup.show {
+            display: flex;
+        }
+
+        .exit-popup-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            animation: popIn 0.3s ease;
+        }
+
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .exit-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .exit-popup h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .exit-popup p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .exit-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2d3748;
+            padding-top: 2rem;
+            text-align: center;
+            color: #cbd5e0;
+        }
+
+        .license-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .license-badge {
+            background: #2d3748;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        /* Home Value Calculator */
+        .calculator {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 3rem;
+            border-radius: 20px;
+        }
+
+        .calculator h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .calculator p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .calculator-form {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .calculator-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+        }
+
+        .calculator-btn {
+            background: white;
+            color: #667eea;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .calculator-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .benefits-grid,
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .comparison-header,
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .stats,
+            .trust-badges {
+                grid-template-columns: 1fr;
+            }
+
+            .chat-popup {
+                width: 280px;
+            }
+
+            .sticky-cta {
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .chat-widget {
+                bottom: 80px;
+                right: 10px;
+            }
+        }
+
+        /* Loading Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">ClearSale</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#who-we-help">Who We Help</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#service-areas">Areas We Serve</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="#contact" class="cta-button">Get Free Offer</a>
+        </nav>
+    </header>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta">
+        <a href="#contact" class="sticky-cta-button">💰 Get Cash Offer Now</a>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <div class="chat-button" onclick="toggleChat()">💬</div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <h4>How Can We Help?</h4>
+            </div>
+            <div class="chat-content">
+                <p>Get instant answers to your questions:</p>
+                <div class="chat-options">
+                    <div class="chat-option" onclick="selectChatOption('offer')">Get My Cash Offer</div>
+                    <div class="chat-option" onclick="selectChatOption('process')">How Does It Work?</div>
+                    <div class="chat-option" onclick="selectChatOption('timeline')">How Fast Can You Close?</div>
+                    <div class="chat-option" onclick="selectChatOption('call')">Speak With Someone</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="urgency-banner">⏰ Limited Time: Get Your Offer In 24 Hours!</div>
+            <h1>Sell Your Denver Home Fast & Easy</h1>
+            <p>Colorado's most trusted home buyer since 2001. No fees, no repairs, no hassles. Get your guaranteed cash offer in 24 hours!</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Get My Cash Offer</a>
+                <a href="tel:3036259191" class="btn-secondary">Call (303) 625-9191</a>
+            </div>
+            <div class="guarantee-badge">
+                🛡️ 100% No Obligation Guarantee - Licensed & Insured
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Mentions -->
+    <section class="media-mentions">
+        <div class="container">
+            <p>As Seen On:</p>
+            <div class="media-logos">
+                <div class="media-logo">Channel 7 News</div>
+                <div class="media-logo">CBS Denver</div>
+                <div class="media-logo">Denver Post</div>
+                <div class="media-logo">9News</div>
+                <div class="media-logo">FOX31</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Our Simple 4-Step Process</h2>
+            <div class="process-timeline">
+                <div class="process-card fade-in">
+                    <div class="process-number">1</div>
+                    <h3>Submit Your Info</h3>
+                    <p>Tell us about your property with our simple form or give us a quick call. No obligations.</p>
+                    <div class="time-indicator">5 Minutes</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">2</div>
+                    <h3>Property Evaluation</h3>
+                    <p>We'll assess your home and provide you with a fair price range within hours.</p>
+                    <div class="time-indicator">Same Day</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">3</div>
+                    <h3>Get Your Offer</h3>
+                    <p>Receive your no-obligation cash offer within 24 hours. No surprises, no hidden fees.</p>
+                    <div class="time-indicator">24 Hours</div>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">4</div>
+                    <h3>Close & Get Paid</h3>
+                    <p>Choose your closing date and get your cash. We handle all the paperwork and details.</p>
+                    <div class="time-indicator">7-30 Days</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Help Section -->
+    <section class="who-we-help" id="who-we-help">
+        <div class="container">
+            <h2 class="section-title">We Help Homeowners in Any Situation</h2>
+            <div class="situations-grid">
+                <div class="situation-category fade-in">
+                    <h3>Life Changes</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Inherited Home</div>
+                        <div class="situation-item">Divorce</div>
+                        <div class="situation-item">Job Loss</div>
+                        <div class="situation-item">Bankruptcy</div>
+                        <div class="situation-item">Relocation</div>
+                        <div class="situation-item">Retirement</div>
+                        <div class="situation-item">Health Issues</div>
+                        <div class="situation-item">Downsizing</div>
+                    </div>
+                </div>
+                <div class="situation-category fade-in">
+                    <h3>Property Conditions</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Fire Damaged</div>
+                        <div class="situation-item">Storm Damaged</div>
+                        <div class="situation-item">Termite Damaged</div>
+                        <div class="situation-item">Home Repairs Needed</div>
+                        <div class="situation-item">Full of Trash or Stuff</div>
+                        <div class="situation-item">Hoarder Homes</div>
+                        <div class="situation-item">Problem Tenants</div>
+                        <div class="situation-item">Unfinished Construction</div>
+                    </div>
+                </div>
+                <div class="situation-category fade-in">
+                    <h3>Financial Challenges</h3>
+                    <div class="situation-list">
+                        <div class="situation-item">Foreclosure</div>
+                        <div class="situation-item">Past Due Mortgages</div>
+                        <div class="situation-item">No Equity</div>
+                        <div class="situation-item">Code Violations</div>
+                        <div class="situation-item">Title Issues</div>
+                        <div class="situation-item">Expensive Repairs</div>
+                        <div class="situation-item">Bad Tenants</div>
+                        <div class="situation-item">Family Issues</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose ClearSale?</h2>
+            <div class="benefits-grid">
+                <div class="benefits-content">
+                    <h2>The Smart Way to Sell</h2>
+                    <div class="benefits-list">
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Zero Fees</strong> - No realtor commissions or hidden costs
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Sell As-Is</strong> - No repairs, cleanup, or staging required
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Fast Closing</strong> - Close in as little as 7 days
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Guaranteed Offer</strong> - Fair, competitive cash offers
+                            </div>
+                        </div>
+                        <div class="benefit-item fade-in">
+                            <div class="benefit-icon">✓</div>
+                            <div>
+                                <strong>Local Experts</strong> - 24+ years serving Colorado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison-table">
+                    <div class="comparison-header">
+                        <div>ClearSale</div>
+                        <div>Traditional Sale</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Zero Fees</div>
+                        <div>✗ 6% + Fees</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Sell As-Is</div>
+                        <div>✗ Repairs Required</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Close in 7 Days</div>
+                        <div>✗ 60-90+ Days</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ Guaranteed Sale</div>
+                        <div>✗ May Not Sell</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div>✓ No Showings</div>
+                        <div>✗ Constant Showings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="service-areas" id="service-areas">
+        <div class="container">
+            <h2 class="section-title">We Buy Houses Throughout Colorado</h2>
+            <p class="section-subtitle">Local cash buyers serving Denver and surrounding areas</p>
+            <div class="areas-grid">
+                <div class="area-card fade-in">
+                    <h3>Denver Metro</h3>
+                    <ul>
+                        <li>Denver</li>
+                        <li>Aurora</li>
+                        <li>Lakewood</li>
+                        <li>Westminster</li>
+                        <li>Arvada</li>
+                        <li>Thornton</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>North Colorado</h3>
+                    <ul>
+                        <li>Fort Collins</li>
+                        <li>Longmont</li>
+                        <li>Brighton</li>
+                        <li>Northglenn</li>
+                        <li>Broomfield</li>
+                        <li>Commerce City</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>South Colorado</h3>
+                    <ul>
+                        <li>Colorado Springs</li>
+                        <li>Fountain</li>
+                        <li>Monument</li>
+                        <li>Castle Rock</li>
+                        <li>Littleton</li>
+                        <li>Centennial</li>
+                    </ul>
+                </div>
+                <div class="area-card fade-in">
+                    <h3>West Areas</h3>
+                    <ul>
+                        <li>Golden</li>
+                        <li>Wheat Ridge</li>
+                        <li>Englewood</li>
+                        <li>Applewood</li>
+                        <li>Black Hawk</li>
+                        <li>Parker</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="areas-cta">
+                <p>Don't see your area listed? We buy houses throughout Colorado!</p>
+                <a href="tel:3036259191" class="cta-button">Call Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Colorado's Most Trusted Home Buyer</h2>
+                    <p>ClearSale has been recognized as one of the leading home buyers in Colorado, having successfully purchased and sold hundreds of homes in Denver and its neighboring areas since 2001.</p>
+                    <p>As a local Denver, Colorado house-buying company, we come to you quickly and want to buy your house fast and right now. Our fast, simple, pain-free process is streamlined to give you the money you need as efficiently as possible.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">24+</div>
+                            <div class="stat-label">Years in Business</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Homes Purchased</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24hr</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">BBB A+ Rated</div>
+                    <div class="badge">Local & Family Owned</div>
+                    <div class="badge">Licensed & Insured</div>
+                    <div class="badge">As Seen On TV</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Expert Team</h2>
+            <div class="team-grid">
+                <div class="team-member fade-in">
+                    <div class="team-photo">R</div>
+                    <div class="team-name">Rick Medina</div>
+                    <div class="team-role">Senior Property Specialist</div>
+                    <div class="team-description">Over 15 years helping homeowners with quick, fair sales. Known for his honesty and straightforward approach.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">B</div>
+                    <div class="team-name">Brian Thompson</div>
+                    <div class="team-role">Property Evaluator</div>
+                    <div class="team-description">Expert at property assessment and helping families through difficult transitions with compassion.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">T</div>
+                    <div class="team-name">Troy Williams</div>
+                    <div class="team-role">Client Relations Manager</div>
+                    <div class="team-description">Dedicated to making the selling process smooth and stress-free for every homeowner.</div>
+                </div>
+                <div class="team-member fade-in">
+                    <div class="team-photo">E</div>
+                    <div class="team-name">Emma Rodriguez</div>
+                    <div class="team-role">Customer Service Lead</div>
+                    <div class="team-description">First point of contact who ensures every client feels heard and supported throughout their journey.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Properties We've Transformed</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            🔥
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            🏠
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Fire Damaged Home - Aurora</h4>
+                        <p>Bought as-is and completely renovated for a new family</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            🗑️
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            ✨
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Hoarder Home - Denver</h4>
+                        <p>Full cleanup and renovation, now a beautiful family home</p>
+                    </div>
+                </div>
+                <div class="gallery-item fade-in">
+                    <div class="gallery-images">
+                        <div class="gallery-before">
+                            ⚡
+                            <div class="gallery-label">Before</div>
+                        </div>
+                        <div class="gallery-after">
+                            🏡
+                            <div class="gallery-label">After</div>
+                        </div>
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Storm Damage - Lakewood</h4>
+                        <p>Complete restoration after severe weather damage</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How do you determine the offer price?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We consider your home's condition, location, comparable sales, and current market conditions. Our offers are based on what we can sell the property for after any necessary repairs, minus our costs and a fair profit margin.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Will you really buy my house in any condition?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes! We buy houses in
